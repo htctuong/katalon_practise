@@ -13,13 +13,15 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.openBrowser('https://waterbear.preftech.com/')
+WebUI.openBrowser('https://missioncontrol.qak8s.vibrenthealth.com/')
 
-WebUI.setText(findTestObject('input_Login', [('name') : 'username']), 'dynagility')
+WebUI.setText(findTestObject('input_Login', [('name') : 'email']), 'hao.tran@dynagility.com ')
 
-WebUI.setText(findTestObject('input_Login', [('name') : 'password']), 'Test123!')
+WebUI.setText(findTestObject('input_Login', [('name') : 'password']), 'Testing@!123456')
 
-WebUI.click(findTestObject('btn_Login', [('type') : 'Submit']))
+WebUI.click(findTestObject('btn_Login', [('type') : 'submit']))
 
-WebUI.verifyTextPresent('DynAgility Test', false)
+WebUI.delay(5)
+
+WebUI.verifyTextPresent('Authenticator Code', false)
 

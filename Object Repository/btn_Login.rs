@@ -7,20 +7,20 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@name = '${name}']</value>
+         <value>//input[@type=&quot;${type}&quot;]</value>
       </entry>
       <entry>
          <key>XPATH</key>
          <value>//input[@type=&quot;Submit&quot;]</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>name</name>
+      <name>xpath</name>
       <type>Main</type>
-      <value>${name}</value>
+      <value>//input[@type=&quot;${type}&quot;]</value>
    </webElementProperties>
 </WebElementEntity>

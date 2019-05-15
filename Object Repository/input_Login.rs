@@ -23,11 +23,4 @@
       <type>Main</type>
       <value>//input[@name=&quot;${name}&quot;]</value>
    </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>name</name>
-      <type>Main</type>
-      <value>${name}</value>
-   </webElementProperties>
 </WebElementEntity>
